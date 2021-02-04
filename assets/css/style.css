@@ -42,8 +42,6 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.678);
 }
 
-
-
 .features .card img{
   max-height: 350px;
 }
@@ -56,6 +54,27 @@ h1, h2, h3, h4, h5, h6 {
 .paralax-mf {
   position: relative;
   padding: 8rem 0;
+}
+
+/* Read More Button Styles */
+.btn{
+  background: #21409a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #21409a, #059ee3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right,#21409a, #059ee3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border: none;
+transition: .2s ease-in-out;
+}
+
+.btn:hover{
+  padding: 10px;
+}
+
+.simba-group .card{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -373,12 +392,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);  
   opacity: 0;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(23, 26, 29, 0.8);
+  background:  #00071C;
 }
 
 #header .logo {
@@ -720,7 +739,7 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 18px 0;
+  padding: 24px 0;
   background: #f8f9fa;
   min-height: 40px;
   margin-top: 86px;
@@ -2320,14 +2339,14 @@ section {
 }
 
 #footer {
-  background: #4a5562;
+  background: #000;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #515d6a;
+  background: #00071C;
   padding: 60px 0 30px 0;
 }
 
