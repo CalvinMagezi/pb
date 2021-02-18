@@ -27,6 +27,7 @@
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
@@ -44,24 +45,30 @@
 
       <!-- <h1 class="logo"><a href="index.html">Sailor</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo"><img src="assets/img/Logo-2-1.png" alt="" class="img-fluid"></a>
+      <a href="index.html" class="logo"><img src="assets/img/PB logo-white.png" alt="" class="img-fluid"></a>
 
       <nav class="nav-menu d-none d-lg-block">
 
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#">My Story</a></li>
-          <li><a href="simba-group.html">Simba Group</a></li>
-          <li><a href="#">Mentorship</a></li>
+          <li class="active"><a href="index.html">Home</a></li>          
+          <li><a href="http://www.thesimbagroup.com/" target="_blank">Simba Group</a></li>
+          <!-- <li><a href="#">Mentorship</a></li> -->
           <li><a href="#">Book</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://patrickbitature.blogspot.com/" target="_blank">Blog</a></li>    
 
         </ul>
 
       </nav><!-- .nav-menu -->
 
-      <!-- <a href="index.html" class="get-started-btn effect04 ml-auto">Get Started</a> -->
+      <ul class="list-unstyled list-social ml-auto" style="display: inline-block;">
+        <li><a href="https://www.facebook.com/Patrick-Bitature-174054905964419/" target="_blank"><i
+              class="icofont-facebook"></i></a></li>
+        <li><a href="https://twitter.com/patrickbitature" target="_blank"><i class="icofont-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCiw9Vs7hP7JI1Z-rCX3ocBQ" target="_blank"><i
+              class="icofont-youtube"></i></a></li>
+        <li><a href="https://ug.linkedin.com/in/patrickbitature" target="_blank"><i class="icofont-linkedin"></i></a>
+        </li>
+      </ul>
 
     </div>
   </header><!-- End Header -->
@@ -70,9 +77,9 @@
   <div id="hero" class="home">
 
     <div class="container">
-      <div class="hero-content">
-        <h1>I'm <span class="typed"></span></h1>
-        <p class="typed-items" data-typed-person="Patrick Bitature">a Businessman, an Entreprenuer, a Philanthropist, a
+      <div class="hero-content" data-aos="zoom-in-up">
+        <h1>Patrick Bitature</h1>
+        <p class="typed-items" data-typed-person="Patrick Bitature">Businessman, Entreprenuer, Philanthropist,
           Mentor</p>
 
         <ul class="list-unstyled list-social">
@@ -91,6 +98,8 @@
 
   <main id="main">
 
+    
+
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
@@ -103,8 +112,8 @@
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-right">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item"
-                src="https://patrickbitature.com/wp-content/uploads/2020/03/PATRICK-BITATURE-ON-FINANCIAL-LITERACY.mp4"
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/L7A4eD99f1E" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
           </div>
@@ -132,253 +141,290 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Bio and Origin Section ======= -->
-    <section id="features" class="features">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="card bg-dark text-white">
-              <img src="assets/img/OIP.jfif" class="card-img" alt="...">
-              <div class="card-img-overlay text-center align-items-center">
-                <h5 class="card-title mt-5">Biography</h5>
-                <p class="card-text">Founded in 1998 with the flagship Simba Telecom business, Simba Group is now a
-                  conglomerate of East African companies spanning telecommunications, properties, power generation ...
-                </p>
-                <a href="#" class="btn effect04 btn-primary">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-left">
-            <div class="card bg-dark text-white">
-              <img src="assets/img/Patrick-Bitature.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay text-center align-items-center">
-                <h5 class="card-title mt-5">Origin Story</h5>
-                <p class="card-text">When I was 13 my dad was brutally murdered by the Idi Amin regime. My
-                  Dad died at the age of 44, just as I began to truly know him and
-                  admire him as my true hero. I loved ...</p>
-                <a href="#" class="btn effect04 btn-primary">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Bio & Origin Section -->
-
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-      <div class="container">
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
 
-        <div class="section-title">
-          <h2>Companies</h2>
-          <p>Patrick Bitature Founded Companies</p>
-        </div>
+        <div class="clients-slider swiper-container">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a href="http://musanacarts.com/" target="_blank">
+              <img src="assets/img/companies/Musana Carts.png" class="d-block w-100" alt="">
+            </a></div>
+            <div class="swiper-slide"><a href="http://www.electro-maxx.com/index.html" target="_blank">
+              <img src="assets/img/companies/electro_maxx.png" class="d-block w-100" alt="">
+            </a></div>
+            <div class="swiper-slide"><a href="http://www.thesimbagroup.com/portfolio/patrick-bitature-foundation/" target="_blank">
+              <img src="assets/img/companies/PCB Foundation.jpg" class="d-block w-100" alt="...">
+            </a></div>
+            <div class="swiper-slide"><a href="https://ibandauniversity.ac.ug/" target="_blank">
+              <img src="assets/img/companies/IBANDA University Logo.png" class="d-block w-100" alt="">
+            </a></div>
+            <div class="swiper-slide"><img src="assets/img/companies/Pro 500k.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><a href="http://www.thesimbagroup.com/portfolio/pb/" target="_blank">
+              <img src="assets/img/companies/Protea_Hotel_by_Marriott_Kampala_Logo.jpg" class="d-block w-100"
+                alt="">
+            </a></div>
+            <div class="swiper-slide"><a href="http://www.thesimbagroup.com/portfolio/pb/" target="_blank">
+              <img src="assets/img/companies/Protea_Hotel_by_Marriott_Kampala_Skyz_RGB.jpg"
+                class="d-block w-100" alt="">
+            </a></div>
+            <div class="swiper-slide"><img src="assets/img/companies/Sel Beauty LOGO - pink.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/companies/Simba Fresh logo.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><a href="http://www.thesimbagroup.com/project-cat/real-estate/" target="_blank">
+              <img src="assets/img/companies/simba-properties.png" class="d-block w-100" alt="">
+            </a></div>
+            <div class="swiper-slide"><img src="assets/img/companies/Simba Medicare Logo.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/companies/simba_farms.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><a href="http://www.thesimbagroup.com/" target="_blank">
+              <img src="assets/img/companies/Simba_Group_logo-3.png" class="d-block w-100" alt="...">
+            </a></div>
+            <div class="swiper-slide"><a href="http://www.thesimbagroup.com/portfolio/simba-telecom/" target="_blank">
+              <img src="assets/img/companies/simba_telecom.png" class="d-block w-100" alt="">
+            </a></div>
 
-        <div class="row justify-content-center" data-aos="zoom-in-up">
 
 
-          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <a href="http://www.thesimbagroup.com/" target="_blank" target="_blank">
-              <img src="assets/img/companies/Simba_Group_logo-3.png" class="img-fluid" alt="">
-            </a>
+
+
           </div>
-
-
-          <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <a href="http://www.thesimbagroup.com/portfolio/patrick-bitature-foundation/" target="_blank">
-              <img src="assets/img/companies/PCB Foundation.jpg" class="img-fluid" alt="">
-            </a>
-          </div>
-
-        </div>
-
-        <div class="row justify-content-center" data-aos="zoom-in-up">
-
-
-          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <a href="http://www.thesimbagroup.com/portfolio/pb/" target="_blank">
-              <img src="assets/img/companies/Protea_Hotel_by_Marriott_Kampala_Skyz_RGB.jpg" class="img-fluid" alt="">
-            </a>
-          </div>
-
-
-          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <a href="http://www.electro-maxx.com/index.html" target="_blank">
-              <img src="assets/img/companies/electro_maxx.png" class="img-fluid" alt="">
-            </a>
-          </div>
-
-
-          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <a href="http://www.thesimbagroup.com/portfolio/pb/" target="_blank">
-              <img src="assets/img/companies/Protea_Hotel_by_Marriott_Kampala_Logo.jpg" class="img-fluid" alt="">
-            </a>
-          </div>
-
-
-        </div>
-
-        <div class="row" data-aos="zoom-in-up">
-
-
-          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <a href="http://musanacarts.com/" target="_blank">
-              <img src="assets/img/companies/Musana Carts.png" class="img-fluid" alt="">
-            </a>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/companies/Simba Fresh logo.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/companies/Pro 500k.png" class="img-fluid" alt="">
-          </div>
-
-
-          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <a href="https://ibandauniversity.ac.ug/" target="_blank">
-              <img src="assets/img/companies/IBANDA University Logo.png" class="img-fluid" alt="">
-            </a>
-          </div>
-
-
-        </div>
-
-        <div class="row" data-aos="zoom-in-up">
-
-          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/companies/Simba Medicare Logo.png" class="img-fluid" alt="">
-          </div>
-
-
-          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <a href="http://www.thesimbagroup.com/project-cat/real-estate/" target="_blank">
-              <img src="assets/img/companies/simba-properties.png" class="img-fluid" alt="">
-            </a>
-          </div>
-
-
-          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/companies/simba_farms.jpg" class="img-fluid" alt="">
-          </div>
-
-
-          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <a href="http://www.thesimbagroup.com/portfolio/simba-telecom/" target="_blank">
-              <img src="assets/img/companies/simba_telecom.png" class="img-fluid" alt="">
-            </a>
-          </div>
-
-
+          <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Clients Section -->
+    </section><!-- End Clients Section -->   
 
-
-
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/count-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container" data-aos="fade-left">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-              </div>
-              <div class="counter-num">
-                <p class="counter">450</p>
-                <span class="counter-text">Example Fact</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-              </div>
-              <div class="counter-num">
-                <p class="counter">30</p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="ion-ios-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p class="counter">550</p>
-                <span class="counter-text">Example Fact</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-              </div>
-              <div class="counter-num">
-                <p class="counter">24</p>
-                <span class="counter-text">AWARDS WON</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Counter Section -->
-
-    <!-- Demo and Latest Activity Section -->
     <section id="stay-connected" class="stay-connected">
       <div class="container">
 
         <div class="section-title">
-          <h2>Book & Socials</h2>
-          <p>My Book and Social Media Accounts</p>
+          <h2>My Story</h2>
+          <p style="color: white;">Where I Came From</p>
         </div>
 
-        <div class="row text-right justify-content-center">
+        <div class="row text-center justify-content-center">
+          
           <div class="col-6" data-aos="zoom-out-right">
-            <section data-social>
-              <div class="row">
-                <div class="col-12">
-                  <a target="_blank" href="https://www.facebook.com/Patrick-Bitature-174054905964419/"
-                    class="icofont-facebook"><span>Facebook</span></a>
-                </div>
-                <div class="col-12">
-                  <a target="_blank" href="https://twitter.com/patrickbitature"
-                    class="icofont-twitter"><span>Twitter</span></a>
-                </div>
-                <div class="col-12">
-                  <a target="_blank" href="https://www.youtube.com/channel/UCiw9Vs7hP7JI1Z-rCX3ocBQ"
-                    class="icofont-youtube"><span>Youtube</span></a>
-                </div>
-                <div class="col-12">
-                  <a target="_blank" href="https://ug.linkedin.com/in/patrickbitature"
-                    class="icofont-linkedin"><span>LinkedIN</span></a>
-                </div>
-              </div>
+            <h1>Origin Story</h1>
+            <p>When I was 13 my dad was brutally murdered by the Idi Amin regime. My
+              Dad died at the age of 44, just as I began to truly know him and
+              admire him as my true hero. I loved my father so much. I was so
+              devastated and shocked…..words cannot describe. It was the most heart
+              wrenching experience.</p>
+            <p>
+              Not only were we robbed of a father and breadwinner. But everything
+              material that we owned was taken overnight. Everything was gone in a flash, taken.
+            </p>
+            <p>Riches to rags doesn’t begin to describe what we went through. It was
+              moments like those that I felt God had indeed forsaken us. Father
+              Grimes of Namasagali college took me and my siblings in and catered for our school fees
+              for the next few years...</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Read More
+            </button>
+                        
 
-            </section>
+
           </div>
+
           <div class="col-6" data-aos="zoom-out-left">
             <a href="#">
-              <img src="assets/img/book.jpg" alt="">
+              <img src="assets/img/intro-bg(1).jpg" alt="" style="border-radius: 10px;">
             </a>
           </div>
+
+        </div>
+
+      </div>
+      
+    </section>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h5 class="modal-title text-center" id="exampleModalLabel">My Origin Story & Biography</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>When I was 13 my dad was brutally murdered by the Idi Amin regime. My
+          Dad died at the age of 44, just as I began to truly know him and
+          admire him as my true hero. I loved my father so much. I was so
+          devastated and shocked…..words cannot describe. It was the most heart
+          wrenching experience.</p>
+
+        <p>Not only were we robbed of a father and breadwinner. But everything
+          material that we owned was taken overnight. Everything was gone in a flash, taken.</p>
+
+        <p>Riches to rags doesn’t begin to describe what we went through. It was
+          moments like those that I felt God had indeed forsaken us. Father
+          Grimes of Namasagali college took me and my siblings in and catered for our school fees
+          for the next few years.</p>
+
+        <p>The turning point in my life was about a year later, on the day when
+          the family sat down on a mat, not a dining table, to have tea without
+          Sugar for the first time. My mother insisted we just get used to it
+          and drink the tea. Then my youngest brother started crying for Daddy.
+          Then my mother who had 6 children by the age of 30 started crying too.
+          Hysterically. And asking God to come and take us all. Then I felt a
+          big lump in my throat.</p>
+
+        <p>That night I was on the Akamba Bus to Nairobi to look for some sugar.
+          I returned the next day with a suitcase full of sugar – 15 kgs. I got
+          some extra from concerned relatives that realized a 14-year-old had
+          come all the way to Kenya just for sugar. Traveling that far in those
+          days was unheard of, it was like going to Syria today. Communication
+          was hardly there. Crossing the border was scary but no one suspected a
+          young kid to be smuggling sugar in a school suitcase. When I got back
+          home there was so much delight and happiness. My mum hugged me. I
+          automatically realized that I was no longer a boy. I had become a man.
+          That one act had re-defined me. The neighbors heard through the grapevine
+          that I had brought sugar and almost begged to buy some. So we sold
+          them half, and got 4 times what it had cost. And I was on the bus back
+          to Kenya for another suitcase of sugar…and so my career began.</p>
+
+        <p>Do you know what it is to live without a Door lock on the front of
+          your house, or not to have a bathroom door that actually closed? That is the loss of Dignity. I had to
+          restore our dignity and family Self
+          Esteem.</p>
+
+          <p>Patrick Bitature is the Founder and Chairman of Simba Group of Companies, based in
+            Uganda, as well as the
+            chairman of several Ugandan boards, the Honorary Consul for the Australian Consulate in Uganda, and a
+            devoted philanthropist supporting initiatives in health, education, and mentoring young entrepreneurs. He
+            studied at the London School of Accountancy and is a fellow of the Institute of Chartered Secretaries and
+            Administrators in the United Kingdom. In 2013, he was awarded an honorary Doctorate by the United Graduate
+            College and Seminary International, based in Asheville, North Carolina.</p>
+
+          <p>Founded in 1998 with the flagship Simba Telecom business, Simba Group is now a conglomerate of East
+            African
+            companies spanning telecommunications, properties, power generation, agro-business, oil and gas, health
+            and
+            education, tourism, and social enterprise. All Simba Group companies operate under the Group’s core
+            principles of integrity, innovation, and adaptability, and are overseen by sound management structures and
+            rigorous boards.</p>
+
+          <p>Patrick Bitature serves as the chairman of the boards of Umeme Uganda Ltd. (the country’s main energy
+            distributor). He also previously served as Chairman of the Board of Directors for Uganda Investment
+            Authority (UIA), and several other organizations.</p>
+
+          <p>The Bitature family supports initiatives improving health, education, mentorship, and youth empowerment
+            through The Bitature Foundation. The chairman also serves as a patron of Alliance of Mayors & Municipal
+            Leaders on HIV/AIDS in Africa (AMICAALL), CURE Children’s Home Uganda among other goodwill initiatives.
+          </p>
+          <p>Patrick Bitature has been honored with numerous awards, including the ICSA Presidential Medal for
+            Meritorious Service (2018), Ernst & Young Entrepreneur of the Year – East African (2011), and The Price
+            Water House Coopers East African Business Leaders of the Future (2003).</p>
+
+          <p>Patrick Bitature was born in Uganda, where he still resides. He is married with four children and
+            prioritizes spending time with family. He is an active participant in church and enjoys educational
+            reading,
+            traveling, motor cross, and attending international conferences.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======= Testimonials Section ======= -->
+<div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/quotes.jpg)">
+  <div class="overlay-mf"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" data-aos="fade-up-left">
+        <div id="testimonial-mf" class="owl-carousel owl-theme">
+          <div class="testimonial-box">
+            <div class="content-test">
+              <p class="description lead">
+                "A dream written down with a date becomes a goal."
+              </p>
+              <div class="author-test">
+                <span class="author">Patrick Bitature</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <div class="content-test">
+              <p class="description lead">
+                "A goal broken down into steps becomes a plan."
+              </p>
+              <span class="author">Patrick Bitature</span>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <div class="content-test">
+              <p class="description lead">
+                "A plan backed by action makes your dreams come true."
+              </p>
+              <span class="author">Patrick Bitature</span>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <div class="content-test">
+              <p class="description lead">
+                "Design your life so that the sky is the limit. Don't design it around people."
+              </p>
+              <span class="author">Patrick Bitature</span>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <div class="content-test">
+              <p class="description lead">
+                "Real growth comes from inside. When you change fundamentally then you begin to change your family
+                and the society around you."
+              </p>
+              <span class="author">Patrick Bitature</span>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <div class="content-test">
+              <p class="description lead">
+                "There is no shortage of intellectuals, there is just a shortage of integrity."
+              </p>
+              <span class="author">Patrick Bitature</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- End Testimonials Section -->
+
+
+    <!-- Demo and Latest Activity Section -->
+    <section id="stay-connected-2" class="stay-connected-2">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Read My Work</h2>
+          <p style="color: white;">My Book</p>
+        </div>
+
+        <div class="row text-left justify-content-center">
+          <div class="col-6" data-aos="zoom-out-left">
+            <a href="#">
+              <img src="assets/img/book.jpg" alt="" style="border-radius:10px;">
+            </a>
+          </div>
+          <div class="col-6" data-aos="zoom-out-right">
+            <h1>Book Excerpt</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, repellat harum adipisci perspiciatis
+              mollitia saepe ullam, quas voluptatum natus, quam tempora reiciendis sint rerum quos? Incidunt molestiae
+              debitis commodi exercitationem.</p>
+            <a href="#" class="btn btn-primary">Get a copy</a>
+          </div>
+
         </div>
 
       </div>
     </section>
 
     <!-- ======= Featured Section ======= -->
-    <section id="featured" class="featured">
+    <!-- <section id="featured" class="featured">
       <div class="container">
 
         <div class="section-title">
@@ -442,71 +488,11 @@
         </div>
 
       </div>
-    </section><!-- End Featured Section -->
+    </section> -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/quotes.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12" data-aos="fade-up-left">
-            <div id="testimonial-mf" class="owl-carousel owl-theme">
-              <div class="testimonial-box">
-                <div class="content-test">
-                  <p class="description lead">
-                    "A dream written down with a date becomes a goal."
-                  </p>
-                  <div class="author-test">
-                    <span class="author">Patrick Bitature</span>
-                  </div>
-                </div>
-              </div>
-              <div class="testimonial-box">
-                <div class="content-test">
-                  <p class="description lead">
-                    "A goal broken down into steps becomes a plan."
-                  </p>
-                  <span class="author">Patrick Bitature</span>
-                </div>
-              </div>
-              <div class="testimonial-box">
-                <div class="content-test">
-                  <p class="description lead">
-                    "A plan backed by action makes your dreams come true."
-                  </p>
-                  <span class="author">Patrick Bitature</span>
-                </div>
-              </div>
-              <div class="testimonial-box">
-                <div class="content-test">
-                  <p class="description lead">
-                    "Design your life so that the sky is the limit. Don't design it around people."
-                  </p>
-                  <span class="author">Patrick Bitature</span>
-                </div>
-              </div>
-              <div class="testimonial-box">
-                <div class="content-test">
-                  <p class="description lead">
-                    "Real growth comes from inside. When you change fundamentally then you begin to change your family
-                    and the society around you."
-                  </p>
-                  <span class="author">Patrick Bitature</span>
-                </div>
-              </div>
-              <div class="testimonial-box">
-                <div class="content-test">
-                  <p class="description lead">
-                    "There is no shortage of intellectuals, there is just a shortage of integrity."
-                  </p>
-                  <span class="author">Patrick Bitature</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Testimonials Section -->
+    <!-- End Featured Section -->
+
+    
 
 
 
@@ -535,44 +521,32 @@
           <div class="row">
             <div class="col-4" data-aos="flip-left">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item"
-                  src="https://patrickbitature.com/wp-content/uploads/2020/03/PATRICK-BITATURE-ON-FINANCIAL-LITERACY.mp4"
-                  allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nCCp4-YbWIY" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
             <div class="col-4" data-aos="flip-left">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item"
-                  src="https://patrickbitature.com/wp-content/uploads/2020/03/PATRICK-BITATURE-ON-FINANCIAL-LITERACY.mp4"
-                  allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qKfKnxXGM38" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
             <div class="col-4" data-aos="flip-left">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item"
-                  src="https://patrickbitature.com/wp-content/uploads/2020/03/PATRICK-BITATURE-ON-FINANCIAL-LITERACY.mp4"
-                  allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/efbo7IobnLU" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
             <div class="col-4" data-aos="flip-left">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item"
-                  src="https://patrickbitature.com/wp-content/uploads/2020/03/PATRICK-BITATURE-ON-FINANCIAL-LITERACY.mp4"
-                  allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Wg4kDC95AO8" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
             <div class="col-4" data-aos="flip-left">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item"
-                  src="https://patrickbitature.com/wp-content/uploads/2020/03/PATRICK-BITATURE-ON-FINANCIAL-LITERACY.mp4"
-                  allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7IK6bWt7z_Q" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
             <div class="col-4" data-aos="flip-left">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item"
-                  src="https://patrickbitature.com/wp-content/uploads/2020/03/PATRICK-BITATURE-ON-FINANCIAL-LITERACY.mp4"
-                  allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/g_4h_wwZ7TI" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -591,33 +565,30 @@
               </div>
               <div class="row blog">
                 <div class="col-lg-6  col-md-8 d-flex align-items-stretch">
-                  <article class="entry">
-
-                    <div class="entry-img">
-                      <img src="assets/img/blog-2.jpg" alt="" class="img-fluid">
-                    </div>
-
+                  <article class="entry">                  
                     <h2 class="entry-title">
-                      <a href="blog-single.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                      <a href="">BEWARE OF THE CON MAN</a>
                     </h2>
 
                     <div class="entry-meta">
                       <ul>
                         <li class="d-flex align-items-center"><i class="icofont-user"></i> <a
-                            href="blog-single.html">John Doe</a></li>
+                            href="">Patrick Bitature</a></li>
                         <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a
-                            href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                            href=""><time datetime="2020-01-01">December 05, 2019</time></a></li>
                       </ul>
                     </div>
 
                     <div class="entry-content">
                       <p>
-                        Ad impedit qui officiis est in non aliquid veniam laborum. Id ipsum qui aut. Sit aliquam et quia
-                        molestias laboriosam. Tempora nam odit omnis eum corrupti qui aliquid excepturi molestiae.
-                        Facilis et sint quos sed voluptas. Maxime sed tempore enim omnis non alias.
+                       I read with a mixture of horror and sympathy for the victims
+                        of the latest Ponzi scheme gone bad in town. Last week a company, 
+                        Global Cryptocurrencies Ltd, collapsed and along with it went 
+                        billions of shillings, by police estimates, of their clients’ money. 
+                        The company working out of an obscure office on Namirembe road...                         
                       </p>
                       <div class="read-more">
-                        <a href="blog-single.html">Read More</a>
+                        <a href="https://patrickbitature.blogspot.com/2019/12/beware-of-con-man.html" target="_blank">Read More</a>
                       </div>
                     </div>
 
@@ -626,31 +597,28 @@
                 <div class="col-lg-6  col-md-8 d-flex align-items-stretch">
                   <article class="entry">
 
-                    <div class="entry-img">
-                      <img src="assets/img/blog-2.jpg" alt="" class="img-fluid">
-                    </div>
-
                     <h2 class="entry-title">
-                      <a href="blog-single.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                      <a href="">FINANCING OUR ENTREPRENEURS, A CHALLENGE WE CANNOT IGNORE</a>
                     </h2>
 
                     <div class="entry-meta">
                       <ul>
                         <li class="d-flex align-items-center"><i class="icofont-user"></i> <a
-                            href="blog-single.html">John Doe</a></li>
+                            href="">Patrick Bitature</a></li>
                         <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a
-                            href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                            href=""><time datetime="2020-01-01">November 20, 2019</time></a></li>
                       </ul>
                     </div>
 
                     <div class="entry-content">
                       <p>
-                        Ad impedit qui officiis est in non aliquid veniam laborum. Id ipsum qui aut. Sit aliquam et quia
-                        molestias laboriosam. Tempora nam odit omnis eum corrupti qui aliquid excepturi molestiae.
-                        Facilis et sint quos sed voluptas. Maxime sed tempore enim omnis non alias.
+                        In recent weeks the issues of financing for business has been in the news, 
+                        in one form or the other. We have seen the challenge a past minister is 
+                        facing with having to hang onto his home. The case is in court, so we...
+                          
                       </p>
                       <div class="read-more">
-                        <a href="blog-single.html">Read More</a>
+                        <a href="https://patrickbitature.blogspot.com/2019/11/financing-our-entrepreneurs-challenge.html" target="_blank">Read More</a>
                       </div>
                     </div>
 
@@ -658,33 +626,31 @@
                 </div>
 
                 <div class="col-lg-6  col-md-8 d-flex align-items-stretch">
-                  <article class="entry">
-
-                    <div class="entry-img">
-                      <img src="assets/img/blog-2.jpg" alt="" class="img-fluid">
-                    </div>
+                  <article class="entry">                  
 
                     <h2 class="entry-title">
-                      <a href="blog-single.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                      <a href="">SPORTS AS AN ANALOGY FOR BUSINESS</a>
                     </h2>
 
                     <div class="entry-meta">
                       <ul>
                         <li class="d-flex align-items-center"><i class="icofont-user"></i> <a
-                            href="blog-single.html">John Doe</a></li>
+                            href="">Patrick Bitature</a></li>
                         <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a
-                            href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                            href=""><time datetime="2020-01-01">October 15, 2019</time></a></li>
                       </ul>
                     </div>
 
                     <div class="entry-content">
                       <p>
-                        Ad impedit qui officiis est in non aliquid veniam laborum. Id ipsum qui aut. Sit aliquam et quia
-                        molestias laboriosam. Tempora nam odit omnis eum corrupti qui aliquid excepturi molestiae.
-                        Facilis et sint quos sed voluptas. Maxime sed tempore enim omnis non alias.
+                        Like everybody else I know, my spirit was lifted by 
+                        the success of our athletes at the World Athletics 
+                        Championships last week. The diminutive Halima Nakaayi
+                         showed the heart of a lion, sprinting over the last 100m
+                          of the women’s 800m event to snatch victory from a more favoured...
                       </p>
                       <div class="read-more">
-                        <a href="blog-single.html">Read More</a>
+                        <a href="https://patrickbitature.blogspot.com/2019/10/sports-as-analogy-for-business.html" target="_blank">Read More</a>
                       </div>
                     </div>
 
@@ -692,33 +658,88 @@
                 </div>
 
                 <div class="col-lg-6  col-md-8 d-flex align-items-stretch">
-                  <article class="entry">
+                  <article class="entry">                                   
 
-                    <div class="entry-img">
-                      <img src="assets/img/blog-2.jpg" alt="" class="img-fluid">
+                    <div class="entry-title">
+                      <a href="">WELCOME TO UGANDA AFREXIM BANK</a>
                     </div>
-
-                    <h2 class="entry-title">
-                      <a href="blog-single.html">Nisi magni odit consequatur autem nulla dolorem</a>
-                    </h2>
-
                     <div class="entry-meta">
                       <ul>
                         <li class="d-flex align-items-center"><i class="icofont-user"></i> <a
-                            href="blog-single.html">John Doe</a></li>
+                            href="">Patrick Bitature</a></li>
                         <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a
-                            href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                            href=""><time datetime="2020-01-01">September 25, 2019</time></a></li>
                       </ul>
                     </div>
 
                     <div class="entry-content">
                       <p>
-                        Ad impedit qui officiis est in non aliquid veniam laborum. Id ipsum qui aut. Sit aliquam et quia
-                        molestias laboriosam. Tempora nam odit omnis eum corrupti qui aliquid excepturi molestiae.
-                        Facilis et sint quos sed voluptas. Maxime sed tempore enim omnis non alias.
+                        Last week Afrexim Bank opened its regional offices here in 
+                        Kampala in an event that I think should have had much more 
+                        play in the media. The Afrexim Bank has as its stated mission
+                         the desire to stimulate trade, primarily within the continent
+                          but also improve Africa’s trade...
                       </p>
                       <div class="read-more">
-                        <a href="blog-single.html">Read More</a>
+                        <a href="https://patrickbitature.blogspot.com/2019/09/welcome-to-uganda-afrexim-bank.html" target="_blank">Read More</a>
+                      </div>
+                    </div>
+
+                  </article><!-- End blog entry -->
+                </div>
+
+                <div class="col-lg-6  col-md-8 d-flex align-items-stretch">
+                  <article class="entry">                                   
+
+                    <div class="entry-title">
+                      <a href="">CRYPTOCURRENCIES ARE COMING, ARE WE READY?</a>
+                    </div>
+                    <div class="entry-meta">
+                      <ul>
+                        <li class="d-flex align-items-center"><i class="icofont-user"></i> <a
+                            href="">Patrick Bitature</a></li>
+                        <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a
+                            href=""><time datetime="2020-01-01">April 29, 2019</time></a></li>
+                      </ul>
+                    </div>
+
+                    <div class="entry-content">
+                      <p>
+                        In the last few decades in Uganda we have seen the 
+                        currency become so worthless a large part of the 
+                        population resorted to barter trade – exchanging goods for goods... 
+                      </p>
+                      <div class="read-more">
+                        <a href="https://patrickbitature.blogspot.com/2019/04/cryptocurrencies-are-coming-are-we-ready.html" target="_blank">Read More</a>
+                      </div>
+                    </div>
+
+                  </article><!-- End blog entry -->
+                </div>
+
+                <div class="col-lg-6  col-md-8 d-flex align-items-stretch">
+                  <article class="entry">                                   
+
+                    <div class="entry-title">
+                      <a href="">THE KEYS TO OUR HEALTH ARE WITHIN OUR REACH</a>
+                    </div>
+                    <div class="entry-meta">
+                      <ul>
+                        <li class="d-flex align-items-center"><i class="icofont-user"></i> <a
+                            href="">Patrick Bitature</a></li>
+                        <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a
+                            href=""><time datetime="2020-01-01">May 29, 2019</time></a></li>
+                      </ul>
+                    </div>
+
+                    <div class="entry-content">
+                      <p>
+                        I prefer to speak about business. But it is obvious to me as
+                         it should be to everybody, that the fruits of business can’t
+                          be enjoyed without good health. As we progress in age we need to take ...
+                      </p>
+                      <div class="read-more">
+                        <a href="https://patrickbitature.blogspot.com/2019/09/welcome-to-uganda-afrexim-bank.html" target="_blank">Read More</a>
                       </div>
                     </div>
 
@@ -754,7 +775,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <img src="assets/img/PB logo.png" alt="">
+              <img src="assets/img/PB logo-white.png" alt="">
               <p>
                 Simba Complex, Acacia Avenue, Kampala (U)
                 <br>
@@ -857,6 +878,7 @@
   <script src="assets/vendor/typed/typed.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
