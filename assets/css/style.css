@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #34495e;
 }
 
 section {
@@ -425,6 +425,12 @@ h6 {
   }
 }
 
+@media (max-width: 742px) {
+  #header .logo img {
+    max-height: 60px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -545,7 +551,7 @@ h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 16px;
+  top: 26px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -654,7 +660,8 @@ h6 {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/hero-bg.jpg") no-repeat scroll center;
+  background: url("../img/hero-bg.jpg") no-repeat center;
+  background-size: cover;
   height: 100vh;
   width: 100%;
 }
@@ -686,6 +693,14 @@ h6 {
   font-weight: 500;
 }
 
+@media (max-width: 742px) {
+  .hero-content h1,
+  .hero-content p,
+  .hero-content .list-social {
+    transform: translateY(100px);
+  }
+}
+
 #header .list-social li,
 .hero-content .list-social li {
   float: right;
@@ -696,6 +711,12 @@ h6 {
 .hero-content .list-social li i {
   color: #fff;
   font-size: 25px;
+}
+
+@media (max-width: 742px) {
+  #header .list-social li i {
+    visibility: hidden;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -882,11 +903,11 @@ section {
 # Stay Connected
 --------------------------------------------------------------*/
 #stay-connected {
-  color: #000;
+  color: #34495e;
   background: #fff;
 }
 #stay-connected-2 {
-  color: #000;
+  color: #34495e;
   background: #fff;
 }
 
