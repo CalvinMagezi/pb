@@ -882,26 +882,12 @@ section {
 # Stay Connected
 --------------------------------------------------------------*/
 #stay-connected {
-  color: white;
-  background: linear-gradient(
-      to left top,
-      #fff 0% /*bottom-right color*/,
-      #00071c 50% /*bottom-right color*/,
-      #00071c 100% /*top-left color*/
-    ),
-    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
-      /*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+  color: #000;
+  background: #fff;
 }
 #stay-connected-2 {
-  color: white;
-  background: linear-gradient(
-      to left top,
-      #00071c 0% /*bottom-right color*/,
-      #00071c 50% /*bottom-right color*/,
-      #fff 100% /*top-left color*/
-    ),
-    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
-      /*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+  color: #000;
+  background: #fff;
 }
 
 #stay-connect img,
