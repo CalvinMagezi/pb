@@ -680,7 +680,7 @@ h6 {
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: #fff;
+  color: silver;
 }
 
 .hero-content p {
@@ -689,7 +689,9 @@ h6 {
   margin-top: 0;
   margin-bottom: 30px;
   text-transform: capitalize;
-  color: #fff;
+  background: -webkit-linear-gradient(silver, silver);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 500;
 }
 
@@ -709,7 +711,7 @@ h6 {
 
 #header .list-social li i,
 .hero-content .list-social li i {
-  color: #fff;
+  color: silver;
   font-size: 25px;
 }
 
@@ -1532,7 +1534,7 @@ section {
 }
 
 .testimonial-box {
-  color: #fff;
+  color: #c0c0c0;
   text-align: center;
 }
 
@@ -1545,7 +1547,7 @@ section {
 }
 
 .testimonial-box .author {
-  color: #fff;
+  color: #c0c0c0;
   text-transform: uppercase;
   font-weight: 600;
   margin: 1rem 0;
