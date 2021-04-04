@@ -375,14 +375,14 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #21409a;
+  background: #00071c;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #e1444d;
-  color: #fff;
+  background: #fff;
+  color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -660,8 +660,8 @@ h6 {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/hero-bg.jpg") no-repeat center;
-  background-size: cover;
+  background: url("../img/PB-photos/pb2.png") no-repeat left;
+
   height: 100vh;
   width: 100%;
 }
@@ -680,7 +680,7 @@ h6 {
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: silver;
+  color: #00071c;
 }
 
 .hero-content p {
@@ -689,7 +689,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 30px;
   text-transform: capitalize;
-  background: -webkit-linear-gradient(silver, silver);
+  background: -webkit-linear-gradient(#00071c, #00071c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
@@ -709,9 +709,12 @@ h6 {
   margin-right: 20px;
 }
 
-#header .list-social li i,
+#header .list-social li i {
+  color: #fff;
+  font-size: 25px;
+}
 .hero-content .list-social li i {
-  color: silver;
+  color: #00071c;
   font-size: 25px;
 }
 
