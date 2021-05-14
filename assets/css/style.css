@@ -315,6 +315,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+    transform: translateX(50vw);
   }
   .navbar ul {
     display: none;
