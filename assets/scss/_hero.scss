@@ -3,127 +3,74 @@
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
-  background-color: rgba(darken($secondary, 10), 0.8);
+  height: 90vh;
   overflow: hidden;
   position: relative;
+  
 
-  .carousel, .carousel-inner, .carousel-item, .carousel-item::before {
-    position: absolute;
-    top: 0;
-    right:0;
-    left: 0;
-    bottom: 0;
-  }
-
-  .carousel-item {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .carousel-item::before {
+  &::after {
     content: '';
-    background-color: rgba(darken($secondary, 25), 0.6);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 130%;
+    height: 95%;
+    background: linear-gradient(to right, rgba($secondary, 0.8), rgba($secondary, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
+    z-index: 0;
+    border-radius: 0 0 50% 50%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 130%;
+    height: 96%;
+    background: $primary;
+    opacity: 0.3;
+    z-index: 0;
+    border-radius: 0 0 50% 50%;
+    transform: translateX(-50%) translateY(18px) rotate(2deg);
   }
 
   .carousel-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 0;
-    top: 70px;
-    left: 50px;
-    right: 50px;
-  }
-
-  .container {
+    flex-direction: column;
     text-align: center;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 
   h2 {
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 48px;
     font-weight: 700;
   }
 
   p {
+    width: 80%;
     animation-delay: 0.4s;
     margin: 0 auto 30px auto;
     color: #fff;
   }
-  
-  .carousel-inner {
-    .carousel-item {
-      -webkit-transition-property: opacity;
-      transition-property: opacity;
-      background-position: center top;
-    }
-
-    .carousel-item,
-    .active.carousel-item-left,
-    .active.carousel-item-right {
-      opacity: 0;
-    }
-
-    .active,
-    .carousel-item-next.carousel-item-left,
-    .carousel-item-prev.carousel-item-right {
-      opacity: 1;
-      transition: 0.5s;
-    }
-
-    .carousel-item-next,
-    .carousel-item-prev,
-    .active.carousel-item-left,
-    .active.carousel-item-right {
-      left: 0;
-      transform: translate3d(0, 0, 0);
-    }
-  }
 
   .carousel-control-prev, .carousel-control-next {
     width: 10%;
-    top: 112px;
-    @media (max-width: 992px) {
-      top: 66px;
-    }
   }
 
   .carousel-control-next-icon, .carousel-control-prev-icon {
     background: none;
-    font-size: 36px;
+    font-size: 48px;
     line-height: 1;
     width: auto;
     height: auto;
-    background: rgba($white, .2);
-    border-radius: 50px;
-    padding: 10px;
-    transition: 0.3s;
-    color: rgba($white, .5);
-    &:hover {
-      background: rgba($white, .3);
-      color: rgba($white, .8);
-    }
-    
-  }
-
-  .carousel-indicators li {
-    cursor: pointer;
-    background: $white;
-    overflow: hidden;
-    border: 0;
-    width: 12px;
-    height: 12px;
-    border-radius: 50px;
-    opacity: .6;
-    transition: 0.3s;
-    &.active {
-      opacity: 1;
-      background: $primary;
-    }
   }
 
   .btn-get-started {
@@ -132,38 +79,131 @@
     font-size: 14px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 14px 32px;
-    border-radius: 4px;
+    padding: 12px 32px;
+    border-radius: 50px;
     transition: 0.5s;
     line-height: 1;
+    margin: 10px;
     color: #fff;
     animation-delay: 0.8s;
-    background: $primary;
+    border: 2px solid $primary;
     &:hover {
-      background: lighten($primary, 5);
+      background: $primary;
+      color: #fff;
+      text-decoration: none;
     }
   }
 
-  @media (max-width: 992px) {
-    height: 100vh;
-    .carousel-container {
-      top: 8px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 28px;
-    }
-  }
-
+  
   @media (min-width: 1024px) {
+    p {
+      width: 60%;
+    }
     .carousel-control-prev, .carousel-control-next {
       width: 5%;
     }
   }
 
-  @media (max-height: 500px) {
-    height: 120vh;
+  @media (max-width: 768px) {
+
+    &::after {
+      width: 180%;
+      height: 95%;
+      border-radius: 0 0 50% 50%;
+      transform: translateX(-50%) rotate(0deg);
+    }
+  
+    &::before {
+        top: 0;
+        width: 180%;
+        height: 94%;
+        border-radius: 0 0 50% 50%;
+        transform: translateX(-50%) translateY(20px) rotate(4deg);
+    }
   }
+
+  @media (max-width: 575px) {
+    h2 {
+      font-size: 30px;
+    }
+
+    &::after {
+      left: 40%;
+      top: 0;
+      width: 200%;
+      height: 95%;
+      border-radius: 0 0 50% 50%;
+      transform: translateX(-50%) rotate(0deg);
+    }
+  
+    &::before {
+        left: 50%;
+        top: 0;
+        width: 200%;
+        height: 94%;
+        border-radius: 0 0 50% 50%;
+        transform: translateX(-50%) translateY(20px) rotate(4deg);
+    }
+  }
+
+}
+
+/*--------------------------------------------------------------
+# Hero No Slider Section
+--------------------------------------------------------------*/
+#hero-no-slider {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba($secondary, 0.8), rgba($secondary, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
+  }
+
+  h2 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  .btn-get-started {
+    font-family: $font-primary;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    animation-delay: 0.8s;
+    border: 2px solid $primary;
+    &:hover {
+      background: $primary;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: 575px) {
+    h2 {
+      font-size: 30px;
+    }
+  }
+
 }

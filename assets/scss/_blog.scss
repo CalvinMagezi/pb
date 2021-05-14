@@ -3,24 +3,22 @@
 --------------------------------------------------------------*/
 .blog {
 
-  padding: 40px 0 40px 0;
+  padding: 40px 0 20px 0;
 
   .entry {
 
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 60px;
-    overflow: hidden;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 
     .entry-img {
-      max-height: 400px;
-      margin: -20px -20px 20px -20px;
+      max-height: 440px;
+      margin: -30px -30px 20px -30px;
       overflow: hidden;
     }
 
     .entry-title {
-      font-size: 20px;
-      line-height: 26px;
+      font-size: 28px;
       font-weight: bold;
       padding: 0;
       margin: 0 0 20px 0;
@@ -43,6 +41,7 @@
         display: flex;
         flex-wrap: wrap;
         list-style: none;
+        align-items: center;
         padding: 0;
         margin: 0;
     
@@ -51,12 +50,13 @@
         }
       }
       i {
-        font-size: 14px;
-        padding-right: 4px;
+        font-size: 16px;
+        margin-right: 8px;
+        line-height: 0;
       }
 
       a {
-        color: lighten($secondary, 30);
+        color: lighten($default, 20);
         font-size: 14px;
         display: inline-block;
         line-height: 1;
@@ -66,7 +66,6 @@
     .entry-content {
       p {
         line-height: 24px;
-        font-size: 15px;
       }
 
       .read-more {
@@ -75,12 +74,11 @@
           display: inline-block;
           background: $primary;
           color: $white;
-          padding: 6px 20px 7px;
+          padding: 6px 20px;
           transition: 0.3s;
           font-size: 14px;
-          border-radius: 4px;
           &:hover {
-            background: lighten($primary, 8);
+            background: lighten($primary, 5);
           }
         }
       }
@@ -109,22 +107,6 @@
           font-size: 22px;
         }
 
-        .quote-left {
-          position: absolute;
-          left: 20px;
-          top: 20px;
-          font-size: 36px;
-          color: #e7e7e7;
-        }
-
-        .quote-right {
-          position: absolute;
-          right: 20px;
-          bottom: 20px;
-          font-size: 36px;
-          color: #e7e7e7;
-        }
-
         &::after  {
           content: '';
           position: absolute;
@@ -147,12 +129,12 @@
       border-top: 1px solid #e6e6e6;
 
       i {
-        color: lighten($secondary, 20);
+        color: lighten($secondary, 30);
         display: inline;
       }
 
       a {
-        color: lighten($secondary, 30);
+        color: lighten($secondary, 5);
         transition: 0.3s;
         &:hover {
           color: $primary;
@@ -193,17 +175,13 @@
         }
       }
 
+
     }
 
   }
 
   .entry-single {
     margin-bottom: 30px;
-
-    .entry-title {
-      font-size: 32px;
-      line-height: 38px;
-    }
   }
 
   .blog-author {
@@ -213,25 +191,26 @@
 
     img {
       width: 120px;
+      margin-right: 20px;
     }
 
     h4 {
-      margin-left: 140px;
       font-weight: 600;
       font-size: 22px;
       margin-bottom: 0px;
       padding: 0;
+      color: $secondary;
     }
 
     .social-links {
-      margin: 0 0 5px 140px;
+      margin: 0 10px 10px 0;
       a {
-        color: lighten($secondary, 40);
+        color: rgba($secondary, .5);
+        margin-right: 5px;
       }
     }
 
     p {
-      margin-left: 140px;
       font-style: italic;
       color: lighten($default, 45);
     }
@@ -250,11 +229,13 @@
       position: relative;
 
       .comment-img {
-        width: 50px;
+        margin-right: 14px;
+        img {
+          width: 60px;
+        }
       }
 
       h5 {
-        margin-left: 65px;
         font-size: 16px;
         margin-bottom: 2px;
         a {
@@ -269,21 +250,20 @@
         .reply {
           padding-left: 10px;
           color: $secondary;
+          i {
+            font-size: 20px;
+          }
         }
 
       }
 
       time {
-        margin-left: 65px;
         display: block;
         font-size: 14px;
-        color: lighten($secondary, 40);
+        color: lighten($secondary, 10);
         margin-bottom: 5px;
       }
 
-      p {
-        margin-left: 65px;
-      }
 
       &.comment-reply {
         padding-left: 40px;
@@ -304,8 +284,8 @@
       }
 
       input {
-        border-radius: 0;
-        padding: 20px 10px;
+        border-radius: 4px;
+        padding: 10px 10px;
         font-size: 14px;
         &:focus {
           box-shadow: none;
@@ -314,7 +294,7 @@
       }
 
       textarea {
-        border-radius: 0;
+        border-radius: 4px;
         padding: 10px 10px;
         font-size: 14px;
         &:focus {
@@ -328,12 +308,12 @@
       }
 
       .btn-primary {
-        border-radius: 4;
+        border-radius: 4px;
         padding: 10px 20px;
         border: 0;
         background-color: $secondary;
         &:hover {
-          background-color: $primary;
+          background-color: lighten($secondary, 5);
         }
       }
     }
@@ -345,41 +325,27 @@
 
     ul {
       display: flex;
-      padding-left: 0;
+      padding: 0;
+      margin: 0;
       list-style: none;
     }
 
     li {
-      border: 1px solid lighten($secondary,55);
       margin: 0 5px;
-      
       transition: 0.3s;
 
-      &.active {
-        background: lighten($default,81);
-      }
-
       a {
-        color: lighten($default,40);
+        color: $secondary;
         padding: 7px 16px;
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       &.active, &:hover {
         background: $primary;
-        border: 1px solid $primary;
         a {
           color: $white;
-        }
-      }
-
-      &.disabled {
-        background: $white;
-        border: 1px solid lighten($default,80);
-        i {
-          color: lighten($default,68);
-          padding: 10px 16px;
-          display: inline-block;
         }
       }
     }
@@ -407,32 +373,37 @@
     .search-form {
       form {
         background: #fff;
-        border: 1px solid $secondary;
+        border: 1px solid #ddd;
         padding: 3px 10px;
         position: relative;
-        border-radius: 4px;
 
         input[type="text"] {
           border: 0;
           padding: 4px;
+          border-radius: 4px;
           width: calc(100% - 40px);
         }
         button {
           position: absolute;
           top: 0;
-          right: -2px;
+          right: 0;
           bottom: 0;
           border: 0;
           background: none;
           font-size: 16px;
           padding: 0 15px;
           margin: -1px;
-          background: $secondary;
+          background: $primary;
           color: $white;
           transition: 0.3s;
           border-radius: 0 4px 4px 0;
+          line-height: 0;
+          i {
+            line-height: 0;
+          }
+
           &:hover {
-            background: lighten($secondary, 10);
+            background: lighten($primary, 4);
           }
         }
       }
@@ -447,13 +418,14 @@
         }
 
         a {
-          color: lighten($secondary, 10);
+          color: $secondary;
+          transition: 0.3s;
           &:hover {
             color: $primary;
           }
           span {
             padding-left: 5px;
-            color: lighten($secondary, 40);
+            color: lighten($default, 40);
             font-size: 14px;
           }
         }
@@ -475,7 +447,7 @@
         margin-left: 95px;
         font-weight: bold;
         a {
-          color: darken($secondary, 20);
+          color: $secondary;
           transition: 0.3s;
           &:hover {
             color: $primary;
@@ -488,7 +460,7 @@
         margin-left: 95px;
         font-style: italic;
         font-size: 14px;
-        color: lighten($secondary, 40);
+        color: lighten($default, 40);
       }
 
     }
@@ -507,9 +479,8 @@
           font-size: 14px;
           padding: 6px 14px;
           margin: 0 6px 8px 0;
-          border: 1px solid lighten($secondary, 50);
+          border: 1px solid lighten($secondary, 70);
           display: inline-block;
-          border-radius: 4px;
           transition: 0.3s;
           &:hover {
             color: $white;
