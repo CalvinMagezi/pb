@@ -253,6 +253,19 @@
     }
   });
 
+  //Awards Slider Owl Carousel
+
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items:4,
+        autoplay:false,
+        margin:30,
+        loop:true,
+        nav:true,
+        navText:["<i class='icofont-arrow-left'></i>","<i class='icofont-arrow-right'></i>" ]
+    });
+  });
+
   /**
    * Animation on scroll
    */
