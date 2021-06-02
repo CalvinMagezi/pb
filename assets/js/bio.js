@@ -5,10 +5,10 @@ $(document).ready(function() {
 			curentWidth = $(window).width(),
 			SpeedOfAnimationActivation = 0,
 			totalHide = $('.hide'),
-			posFirstBlock = $('.block').eq(0).offset().top - 150;
+			posFirstBlock = $('.block').eq(0).offset().top - 250;
 	
 	// If the current position is > than the first 2 divs then force add the class to all divs.
-	if (currentScroll > 600){
+	if (currentScroll > 200){
 		for ( var i = 0; i < totalHide.length; i++ ){
 			//Desktop animation
 			$(totalHide[i]).addClass('slideIn_Mobile').removeClass('hide');
@@ -17,7 +17,7 @@ $(document).ready(function() {
 	
 	// If the current width > than the 961px .... do something.
 	function SpeedAnimation(){
-		if (curentWidth >= 1136){
+		if (curentWidth >= 1036){
 			SpeedOfAnimationActivation = 100;
 		}
 		else{
@@ -39,7 +39,7 @@ $(document).ready(function() {
 		var curentWidth = $(window).width();
 		var difference = curentWidth - startWidth;
 
-		if (difference > 175 || difference < -175){
+		if (difference > 105 || difference < -105){
 			SpeedAnimation();
 			
 			for (var j = 0; j < totalHide.length; j++){
