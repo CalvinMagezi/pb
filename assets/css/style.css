@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html{
+  background-color:#00071c ;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #444;
@@ -875,6 +878,10 @@ section {
   transition: 0.5s ease-in-out;
 }
 
+.services h5{
+  color: #000;
+}
+
 .services img{
   transition: 0.5s ease-in-out;
 }
@@ -1002,7 +1009,7 @@ section {
   display: inline-block;
   width: 50px;
   height: 40px;
-  background-color: #f3f3f3 !important;
+  background-color: #000 !important;
   margin-left: 10px;
   transition: .3s;
 }
@@ -1076,7 +1083,7 @@ section {
 .why-us .icon-box .description {
   margin-left: 95px;
   line-height: 24px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .why-us .video-box {

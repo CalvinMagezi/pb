@@ -268,7 +268,7 @@
   }
   .content #footer {
     position: relative;
-    width: 180px;
+    width: 100%;
     min-height: 25px;
     margin: 0 auto;
     border-radius: 17px;
