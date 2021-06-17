@@ -415,13 +415,13 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   content: '';
   position: absolute;
   left: 30%;
-  bottom: 0;
-  width: 130%;
-  height: 95%;
-  background: url("../img/PB-photos/pb2.png") center center no-repeat;
+  top: 0;
+  width: 110%;
+  height: 100vh;
+  background: url("../img/pb.jpeg") center center no-repeat;
+  background-size: contain;
   z-index: 0;
-  border-radius: 0 0 50% 50%;
-  transform: translateX(-50%) rotate(0deg);
+  transform: translateX(-62%);
 }
 
 @media(max-width:748px){
@@ -439,6 +439,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 #hero img{
   z-index: 1000;
+  max-width: 200px; 
+  border-radius: 10px;
+  transform: translateX(300px);
 }
 
 #hero::before {
@@ -447,11 +450,10 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   left: 50%;
   top: 0;
   width: 130%;
-  height: 91vh;
+  height: 100vh;
   background: linear-gradient(90deg, #FFf 50%, #00071c 50%);
   opacity: 0.9;
-  z-index: 0;
-  border-radius: 0 0 40% 40%;
+  z-index: 0;  
   transform: translateX(-50%);
 }
 
@@ -462,9 +464,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   flex-direction: column;
   text-align: center;
   bottom: 0;
-  top: 0;
-  left: 0;
+  top: 0;  
   right: 0;
+  transform: translateX(100px);
 }
 
 #hero h2 {
@@ -492,6 +494,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   line-height: 1;
   width: auto;
   height: auto;
+  color: #fff;
 }
 
 .readMore{
@@ -554,41 +557,29 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 @media (max-width: 768px) {
-  #hero::after {
-    width: 180%;
-    height: 95%;
-    border-radius: 0 0 50% 50%;
-    transform: translateX(-50%) rotate(0deg);
+  #hero::before{
+    background: #00071c;
   }
-  #hero::before {
-    top: 0;
-    width: 180%;
-    height: 94%;
-    border-radius: 0 0 50% 50%;
-    transform: translateX(-50%) translateY(20px) rotate(4deg);
+  #hero .carousel-container{
+    transform: translateX(0px);
+  }
+  #hero img{
+    transform: translateX(70px);
   }
 }
 
-@media (max-width: 575px) {
-  #hero h2 {
-    font-size: 30px;
+@media (max-width: 575px) {  
+  #hero::before{
+    background: #00071c;
   }
-  #hero::after {
-    left: 40%;
-    top: 0;
-    width: 200%;
-    height: 95%;
-    border-radius: 0 0 50% 50%;
-    transform: translateX(-50%) rotate(0deg);
+  #hero .carousel-container{
+    transform: translateX(0px);
   }
-  #hero::before {
-    left: 50%;
-    top: 0;
-    width: 200%;
-    height: 94%;
-    border-radius: 0 0 50% 50%;
-    transform: translateX(-50%) translateY(20px) rotate(4deg);
+
+  #hero img{
+    transform: translateX(70px);
   }
+  
 }
 
 .hero-waves {
