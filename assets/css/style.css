@@ -691,11 +691,23 @@ h1, h2, h3, h4, h5, h6, .font-primary {
     transform: translateX(150px) translateY(-20px);
   }
 }
+@media(max-width:414px){
+  #hero h2{
+    font-size: 20px !important;
+  }
+  #hero p{
+    font-size: 12px !important;
+  }
+  #hero img{
+    transform: translateX(75px) translateY(-5px);
+  }
+}
 
 @media(max-width:375px){
   #hero img{
-    transform: translateX(70px) translateY(-30px);
+    transform: translateX(70px) translateY(-5px);
   }
+  
 }
 
 .hero-waves {
