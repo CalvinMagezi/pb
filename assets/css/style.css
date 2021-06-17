@@ -687,6 +687,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   
 }
 
+@media(max-width:375px){
+  #hero img{
+    transform: translateX(70px) translateY(0px);
+  }
+}
+
 .hero-waves {
   display: block;
   width: 100%;
