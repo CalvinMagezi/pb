@@ -414,11 +414,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #hero::after {
   content: '';
   position: absolute;
-  left: 50%;
-  top: 0;
+  left: 30%;
+  bottom: 0;
   width: 130%;
   height: 95%;
-  background: url("../img/PB-photos/pb1.jpg") center left no-repeat;
+  background: url("../img/PB-photos/pb2.png") center center no-repeat;
   z-index: 0;
   border-radius: 0 0 50% 50%;
   transform: translateX(-50%) rotate(0deg);
@@ -447,12 +447,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   left: 50%;
   top: 0;
   width: 130%;
-  height: 96%;
-  background: #00071c;
+  height: 91vh;
+  background: linear-gradient(90deg, #FFf 50%, #00071c 50%);
   opacity: 0.9;
   z-index: 0;
-  border-radius: 0 0 50% 50%;
-  transform: translateX(-50%) translateY(18px) rotate(2deg);
+  border-radius: 0 0 40% 40%;
+  transform: translateX(-50%);
 }
 
 #hero .carousel-container {
