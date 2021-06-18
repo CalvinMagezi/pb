@@ -1692,12 +1692,12 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio {
-  padding-bottom: 60px;
+  padding-bottom: 25px;
 }
 
 .portfolio #portfolio-flters {
   padding: 0;
-  margin: 0 0 35px 0;
+  margin: 0 0 25px 0;
   list-style: none;
   text-align: center;
 }
@@ -1722,17 +1722,21 @@ section {
 }
 
 .portfolio .portfolio-item {
-  background: #1e4356;
+  background: none;
   overflow: hidden;
   min-height: 200px;
   position: relative;
   border-radius: 4px;
   margin: 0 0 30px 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio .portfolio-item img {
   transition: all 0.3s ease-in-out;
-  
+  width: 400px !important;
+  height: 350px !important;
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -1747,12 +1751,12 @@ section {
 
 .portfolio .portfolio-item .portfolio-info h3 {
   font-size: 22px;
-  color: #fff;
+  color: #000;
   font-weight: bold;
 }
 
 .portfolio .portfolio-item .portfolio-info a i {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   font-size: 28px;
   transition: 0.3s;
 }
@@ -1762,12 +1766,12 @@ section {
 }
 
 .portfolio .portfolio-item:hover img {
-  opacity: 0.6;
-  transform: scale(1.1);
+  opacity: 0.4;
+  transform: scale(1.1);  
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
-  opacity: 1;
+  opacity: 1 !important;
   top: calc(50% - 30px);
 }
 
