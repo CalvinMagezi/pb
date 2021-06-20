@@ -254,7 +254,18 @@
   //Awards Slider Owl Carousel
 
   $(document).ready(function(){
+    if($(window).width() < 767){
     $(".owl-carousel").owlCarousel({
+        items:1,
+        autoplay:false,
+        margin:30,
+        loop:true,
+        nav:true,
+        navText:["<i class='icofont-arrow-left'></i>","<i class='icofont-arrow-right'></i>" ]
+    });
+
+    }else{
+      $(".owl-carousel").owlCarousel({
         items:4,
         autoplay:false,
         margin:30,
@@ -262,6 +273,8 @@
         nav:true,
         navText:["<i class='icofont-arrow-left'></i>","<i class='icofont-arrow-right'></i>" ]
     });
+    }
+
   });
 
   /**
