@@ -251,6 +251,28 @@
     }
   });
 
+  // slick slider active 
+  $(".main_home_slider").slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow:"<i class='fa fa-angle-left nextprevleft'></i>",
+    nextArrow:"<i class='fa fa-angle-right nextprevright'></i>"
+});
+
+//    $(".study_slider").slick({
+//        dots: true,
+//        slidesToShow: 1,
+//        slidesToScroll: 1
+//    });
+$(".study_slider").slick({
+    dots: true,
+    arrows:false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+});
+
   //Awards Slider Owl Carousel
 
   $(document).ready(function(){
